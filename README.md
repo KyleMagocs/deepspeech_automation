@@ -27,7 +27,20 @@ Aggregate report for test session can be found in `_test_report.txt`
 
 Each test run will generate its own reporting folder, with a timestamp, e.g. `reports/2021-09-02-16-33-20/`
 
-## 3. File descriptions
+## 3. Expected results
+Given that this could possibly vary on someone else's machine, the results that I'm seeing are:
+
+ audio1: 64%
+
+ audio2: 100%
+
+ audio3: 99%
+
+ audio4: 59%
+
+ audio5: 28%
+ 
+## 4. File descriptions
 
 reports/EXAMPLE
 > this is an example of the output from a test run.  There is an individual data log for each test, as well as an aggregate for the test session.  Future runs can be found in reports/<execution time>
@@ -56,7 +69,7 @@ requirements.txt
 runtests.sh
 > bash script to execute tests.  see 1. Running for more details
 
-## 4.  Notes
+## 5.  Notes
 Several notes for this project--
 
 - input .wav file size is not tracked or logged.
