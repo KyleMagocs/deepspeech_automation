@@ -1,11 +1,7 @@
-import json
+import docker
 import logging
-import os
-import psutil
 import subprocess
 from datetime import datetime
-import docker
-import time
 
 console_logger = logging.getLogger('console')
 
@@ -37,6 +33,7 @@ def call_deepspeech(audio_path):
     output = str(container.logs()).split('\\n')[-2]
     console_logger.debug(f'Output from Process:')
     console_logger.debug(f'\t{output}')
+    test_data_logger.info(f'Output from Deepspeech: {output}')
     console_logger.debug(f'Full output:')
     console_logger.debug(f'\t{container.logs()}')
     return output

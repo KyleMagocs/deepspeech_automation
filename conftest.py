@@ -1,11 +1,7 @@
-import json
-import pytest
-import shutil
-from datetime import datetime
 import logging
-from pytest_html import extras
-
 import os
+import pytest
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(message)s')
 console_logger = logging.getLogger('console')
