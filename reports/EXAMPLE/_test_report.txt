@@ -1,0 +1,4 @@
+Test stats:
+	Average elapsed time:         25.8s
+	Average CPU usage:           99.64%
+	Average Accuracy:            70.00%
