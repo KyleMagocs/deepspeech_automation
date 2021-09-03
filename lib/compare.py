@@ -3,6 +3,9 @@ from jiwer import wer
 
 console_logger = logging.getLogger('console')
 
+'''
+Thin wrapper around jiwer library, to add logging to our process
+'''
 def get_accuracy_of_transcription(expected, actual):
     console_logger.debug(f'expected: {expected}')
     console_logger.debug(f'actual: {actual}')

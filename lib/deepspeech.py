@@ -9,7 +9,6 @@ import time
 
 console_logger = logging.getLogger('console')
 
-
 '''
 runs deepspeech test container against a given audio file
 returns deepspeech's transcript
@@ -33,8 +32,8 @@ def call_deepspeech(audio_path):
 
     cpu_usage = sum(x for x in cpu_loads) / len(cpu_loads)
     console_logger.debug(f'Process completed successfully with avg CPU utilization of {cpu_usage}')
-    # console_logger.info(f'handlers: {test_data_logger.handlers}' )
     test_data_logger.info(f'CPU Usage:{cpu_usage}')
+
     output = str(container.logs()).split('\\n')[-2]
     console_logger.debug(f'Output from Process:')
     console_logger.debug(f'\t{output}')
